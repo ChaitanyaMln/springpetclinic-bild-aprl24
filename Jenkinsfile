@@ -12,7 +12,6 @@ pipeline{
                 steps{
                  sh 'mvn clean package'
                  junit testResults: '**/surefire-reports/*.xml'
-                 archive '**/target/spring-petclinic-*.jar'
          }
      }
     }
